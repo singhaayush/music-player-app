@@ -36,6 +36,12 @@ public class HomePage extends AppCompatActivity {
        private ActionBarDrawerToggle abdt;
 
     @Override
+    protected void onStart() {
+        super.onStart();
+
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
@@ -121,12 +127,12 @@ public class HomePage extends AppCompatActivity {
         int i=0;
 
         mdb=openOrCreateDatabase("MainData",MODE_PRIVATE,null);
-        try {mdb.execSQL("delete from ParentTable");
+        try {
             mdb.execSQL("create table ParentTable (position INT(4)primary key,title varchar(50),artist varchar(50),album varchar(50),path varchar(50))");
         }
         catch (Exception e)
         {
-
+            Toast.makeText(HomePage.this,e.getMessage(),Toast.LENGTH_LONG).show();
         }
 
 
