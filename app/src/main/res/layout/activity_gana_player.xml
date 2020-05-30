@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/music1"
+    android:layout_width="match_parent"
+    android:id="@+id/myLayout"
+    android:layout_height="match_parent"
+    tools:context=".GanaPlayer">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/musico"
+        tools:layout_width="60dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="330dp"
+        android:layout_height="2dp"
+        android:padding="-5dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:background="#ffffff"
+
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginStart="35dp"
+        android:background="@android:drawable/ic_media_previous"
+        android:onClick="myPrev"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_toEndOf="@+id/playpause"
+        android:background="@android:drawable/ic_media_next"
+        android:onClick="myNext"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/close"
+        android:onClick="myStop"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/seekBar"
+        android:layout_marginBottom="111dp"
+        android:text="00:00"
+        android:textColor="#150" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/seekBar"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginEnd="-1dp"
+        android:text="00:00"
+        android:textColor="#150" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="92dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="103dp"
+        android:text="Switch" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="84dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/switch1"
+        android:layout_marginEnd="99dp"
+        android:gravity="center"
+        android:text="ENABLE SENSOR"
+        android:textAllCaps="true"
+        android:textColor="@color/chandi"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/playpause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginStart="131dp"
+        android:background="@drawable/pause"
+        android:onClick="play_pause"
+        android:text="ToggleButton"
+        android:textOff="" />
+    />
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backplaylist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPlaylistSongs">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="114dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Your Playlist"
+        android:textColor="?android:attr/colorPrimary"
+        android:textDirection="firstStrong"
+        android:textSize="18dp"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:id="@+id/pList"
+        android:layout_width="match_parent"
+        android:layout_height="356dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

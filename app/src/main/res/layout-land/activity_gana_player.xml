@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/music1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GanaPlayer">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="242dp"
+        android:layout_height="198dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        app:srcCompat="@drawable/music" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="103dp"
+        android:background="@color/rang" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="39dp"
+        android:layout_marginStart="31dp"
+        android:background="@android:drawable/ic_media_previous"
+        android:onClick="myPrev"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginEnd="202dp"
+        android:background="@android:drawable/ic_media_pause"
+        android:onClick="myPause"
+        android:text="" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginStart="180dp"
+        android:background="@android:drawable/ic_media_play"
+        android:onClick="myPlay"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="75dp"
+        android:background="@android:drawable/ic_media_next"
+        android:onClick="myNext"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button"
+        android:onClick="myStop"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="59dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/seekBar"
+        android:layout_toStartOf="@+id/seekBar"
+        android:text="00:00"
+        android:textColor="@color/chandi" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/seekBar"
+        android:layout_marginEnd="88dp"
+        android:text="00:00"
+        android:textColor="@color/chandi" />
+
+    <ListView
+
+        android:id="@+id/playlist"
+        android:layout_width="344dp"
+        android:layout_height="217dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/chandi"
+        android:visibility="invisible" />
+
+</RelativeLayout>

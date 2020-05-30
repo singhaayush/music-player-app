@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#141414"
+    android:alpha="0.4"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/customtext"
+        android:layout_width="310dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="37dp"
+        android:alpha="0.9"
+        android:background="#141414"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#D2691E"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/customtextartist"
+        android:layout_width="304dp"
+        android:layout_height="36dp"
+        android:textColor="#D3D3D3"
+        android:gravity="right"
+        android:fontFamily="cursive"
+        android:textSize="14dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/customtext"
+        android:layout_marginEnd="39dp"
+        android:text="Artist->" />
+
+
+</RelativeLayout>
